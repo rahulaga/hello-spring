@@ -15,4 +15,7 @@ HelloWorld becomes multi-lingual here and based on a specific language Greeter i
 `TestHelloWorldSpring`, `TestHelloWorldSpringIntegration` load the above context in two different ways.
 `TestHelloWorldSpringIntegrationCustomContext` loads a custom `test-spring-beans.xml` and the `TestGreeter`
 
+Another way to do this would be use Sping 'profiles' and have a test profile in your main xml. 
+Personally I prefer to keep my test and production and test code separate.
+
 `AppConfig` and `TestAppConfig` show the use of annotations instead of XML
