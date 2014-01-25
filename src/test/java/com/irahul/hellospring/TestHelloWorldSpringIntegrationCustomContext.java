@@ -6,6 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
+/**
+ * Note extending AbstractJUnit4SpringContextTests which is a spring-test class
+ * @author rahul
+ *
+ */
 @ContextConfiguration(locations = { "classpath:test-spring-beans.xml" })
 public class TestHelloWorldSpringIntegrationCustomContext extends AbstractJUnit4SpringContextTests {
 	

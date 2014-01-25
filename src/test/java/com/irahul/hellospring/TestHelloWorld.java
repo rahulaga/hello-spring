@@ -6,7 +6,7 @@ import org.junit.Test;
 import com.irahul.hellospring.impl.HindiGreeter;
 
 /**
- * Test the traditional class
+ * Test the traditional class (not using Spring)
  * @author rahul
  *
  */

@@ -2,20 +2,21 @@ package com.irahul.hellospring;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
- * Note extending AbstractJUnit4SpringContextTests which is a spring-test class
+ * Note: not extending a Spring class, instead using a test runner
  * @author rahul
  *
  */
 
+@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:spring-beans.xml" })
-public class TestHelloWorldSpringIntegration extends AbstractJUnit4SpringContextTests {
-	
+public class TestHelloWorldSpringTestRunner {
 	@Autowired
 	private HelloWorldSpring hws;
 	

@@ -1,7 +1,7 @@
 package com.irahul.hellospring;
 
 /**
- * A test greeter. Using a mock is also an option (like EasyMock)
+ * A test greeter. Using a mocking framework is also an option (like EasyMock)
  * @author rahul
  *
  */
