@@ -17,10 +17,12 @@ public class TestHelloWorldSpring {
 	public void testHelloWorldBeans(){
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring-beans.xml");
  
-		HelloWorldSpring obj = (HelloWorldSpring) context.getBean("helloWorld");		
+		HelloWorldSpring hws = (HelloWorldSpring) context.getBean("helloWorld");				
+		System.out.println(hws.execute());					
+		Assert.assertEquals("Namaste", hws.execute());
 		
-		System.out.println(obj.execute());			
 		
-		Assert.assertEquals("Namaste", obj.execute());
+		Greeter greeter = (Greeter) context.getBean("greeterHindi");
+		System.out.println(greeter.sayHello());
 	}
 }
