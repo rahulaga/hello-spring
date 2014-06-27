@@ -1,5 +1,6 @@
 package com.irahul.hellospring;
 
+
 /**
  * A Spring version
  * @author rahul
@@ -10,6 +11,8 @@ public class HelloWorldSpring {
 	
 	public void setGreeter(Greeter greeter){
 		this.greeter=greeter;
+
+		System.err.println("setter called");
 	}
 	
 	public String execute(){
