@@ -9,4 +9,8 @@
 	<bean id="helloWorld" class="com.irahul.hellospring.HelloWorldSpring">
 		<property name="greeter" ref="greeterHindi" />
 	</bean>
+	
+	<bean id="helloWorldEnglish" class="com.irahul.hellospring.HelloWorldSpring">
+		<property name="greeter" ref="greeterEnglish" />
+	</bean>
 </beans>

@@ -17,6 +17,7 @@ import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 public class TestHelloWorldSpringIntegration extends AbstractJUnit4SpringContextTests {
 	
 	@Autowired
+	@Qualifier("helloWorld")
 	private HelloWorldSpring hws;
 	
 	@Autowired

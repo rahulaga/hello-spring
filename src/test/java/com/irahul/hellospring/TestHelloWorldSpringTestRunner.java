@@ -18,6 +18,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(locations = { "classpath:spring-beans.xml" })
 public class TestHelloWorldSpringTestRunner {
 	@Autowired
+	@Qualifier("helloWorld")
 	private HelloWorldSpring hws;
 	
 	@Autowired
