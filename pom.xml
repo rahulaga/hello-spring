@@ -10,7 +10,7 @@
 	<name>${project.artifactId}</name>
 	
 	<properties>
-		<spring.version>4.0.5.RELEASE</spring.version>
+		<spring.version>4.1.1.RELEASE</spring.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
