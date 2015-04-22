@@ -5,6 +5,8 @@
 
 	<bean id="greeterHindi" class="com.irahul.hellospring.impl.HindiGreeter"/>
 	<bean id="greeterEnglish" class="com.irahul.hellospring.impl.EnglishGreeter"/>
+	<bean id="greeterSpanish" class="com.irahul.hellospring.impl.SpanishGreeter"/>
+	
 
 	<bean id="helloWorld" class="com.irahul.hellospring.HelloWorldSpring">
 		<property name="greeter" ref="greeterHindi" />

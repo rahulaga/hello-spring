@@ -15,7 +15,7 @@ public class TestHelloWorldSpring {
 	@SuppressWarnings("resource")
 	@Test
 	public void testHelloWorldBeans(){
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring-beans.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"spring-beans.xml"});
  
 		HelloWorldSpring hws = (HelloWorldSpring) context.getBean("helloWorld");				
 		System.out.println(hws.execute());					
