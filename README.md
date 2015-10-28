@@ -17,5 +17,5 @@ HelloWorld becomes multi-lingual here and based on a specific language Greeter i
 `TestHelloWorldSpringIntegrationCustomContext` loads a custom `test-spring-beans.xml` and the `TestGreeter`
 `TestHelloWorldSpringTestRunner` uses the SpringJUnit4ClassRunner test runner instead of extending the Spring abstract test class
 
-Another way to do this would be use Sping 'profiles' and have a test profile in your main xml. 
+Another way to do this would be use Spring 'profiles' and have a test profile in your main xml. 
 Personally I prefer to keep my test and production code separate.
