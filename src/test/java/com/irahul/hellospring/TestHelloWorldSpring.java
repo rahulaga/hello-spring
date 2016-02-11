@@ -15,12 +15,16 @@ public class TestHelloWorldSpring {
 	@SuppressWarnings("resource")
 	@Test
 	public void testHelloWorldBeans(){
-		ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"spring-beans.xml"});
+		ApplicationContext context = new ClassPathXmlApplicationContext(
+				new String[]{"spring-beans.xml"});
  
 		HelloWorldSpring hws = (HelloWorldSpring) context.getBean("helloWorld");				
 		System.out.println(hws.execute());					
 		Assert.assertEquals("Namaste", hws.execute());
 		
+		HelloWorldSpring hws2 = (HelloWorldSpring) context.getBean("helloWorldEnglish");				
+		System.out.println(hws2.execute());					
+		Assert.assertEquals("Hello World!", hws2.execute());
 		
 		Greeter greeter = (Greeter) context.getBean("greeterHindi");
 		System.out.println(greeter.sayHello());
